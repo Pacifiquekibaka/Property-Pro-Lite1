@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Agent page to post property advert" />
+    <title>Post An Advert</title>
+    <link rel="stylesheet" href="css/postadvet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/css/all.css"> <!--font css-->
+	<link href="css/style1.css" rel="stylesheet" type="text/css" />   <!--main css-->
+   
+</head>
+
+<body class="managepage">
+       
+    
+    <main class="advert-main">
+        <div class="ads-card">
+            <h3>Fill below Details To Post An advert</h3>
+            <form class="v-form" action="#">
+                <label for="name">Name</label>
+                <input type="text" name="propName" required>
+                <label for="price">Price</label>
+                <input type="text" name="propPrice" required>
+                <label for="state">State</label>
+                <input type="text" name="propState" required>
+                <label for="city">City</label>
+                <input type="text" name="propCity" required>
+                <label for="city">Property Type</label>
+                <input type="text" name="protype" required>
+                <label for="address">Address</label>
+                <input type="text" name="propAddress" required>
+                <label for="pictures">Add picures</label>
+                <input type="file" name="propImage" multiple="multiple" required>
+                
+                <textarea name="propDescription" class="is-rounded f-padding-on" rows="5"
+                    placeholder="Describe your property..."></textarea>
+                <button class="btn-action">Post Advert</button>
+            </form>
+        </div>
+    </main>
+    
+    
+    
+</body>
+
+</html>
