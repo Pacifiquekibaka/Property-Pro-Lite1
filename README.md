@@ -1,5 +1,7 @@
 # Property-Pro-Lite1
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
+
+Features:
   
 1.User can sign up.
 2. User can sign in.
@@ -12,6 +14,7 @@ Property Pro Lite is a platform where people can create and/or search properties
 9. User can view a specific property advert
 
 Optional Features
+
 ● User can reset password.
 ● flag/report a posted AD as fraudulent.
 ● User can add multiple pictures to a posted ad.
