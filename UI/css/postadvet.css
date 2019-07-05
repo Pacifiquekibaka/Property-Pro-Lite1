@@ -1,0 +1,275 @@
+/* resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* pre defining colors variables */
+:root {
+  --color-primary: #263238;
+  --color-secondary: darkgrey;
+  --main-text-color: #fff;
+  --main-content-bg: #fafafa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.pull-right {
+  float: right;
+}
+
+li {
+  float: left;
+  margin-right: 5px;
+}
+
+li a,
+li span {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.select-prop-types {
+  height: 2.5rem;
+}
+.actions {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1;
+  grid-gap: 1rem;
+}
+
+.btn-action {
+  cursor: pointer;
+  border: none;
+  color: white;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  padding: 2%;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+}
+.header:first-child {
+  float: left;
+}
+
+.nav {
+  float: right;
+}
+
+/* .agent-header {} */
+.v-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-centered {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(-135deg, #d3d3d3, var(--color-primary));
+}
+
+.f-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "f-logo"
+    "v-form";
+  background-color: #fff;
+  width: 80%;
+  padding: 1rem;
+}
+
+.f-title {
+  font-size: 2rem;
+}
+
+.f-container form input {
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.f-container form p {
+  margin-top: 1rem;
+}
+
+.f-container form a {
+  text-decoration: none;
+}
+
+.f-container form p a {
+  color: grey;
+}
+
+.f-padding {
+  height: 2.2rem;
+  margin-bottom: 1em;
+}
+
+.f-padding-on {
+  padding: 0.5rem;
+  margin-bottom: 1em;
+}
+
+.advert-main .ads-card h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.is-centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* aside section */
+.aside {
+  grid-area: aside;
+  padding: 5px;
+}
+
+.aside>section {
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(185, 185, 185, 0.897);
+  border-radius: 12px;
+  height: 80vh;
+}
+
+.aside>section>h2 {
+  font-size: 15px;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  color: var(--main-text-color);
+  padding: 12px;
+  background-color: var(--color-primary);
+}
+
+
+.aside>section>div>p {
+  margin-bottom: 1rem;
+}
+
+.aside>section>div>p>label {
+  text-transform: capitalize;
+}
+.agent-main,
+.advert-main {
+  grid-area: main;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.advert-main {
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.advert-main .ads-card {
+  width: 60%;
+}
+/* card section */
+.card,
+.ads-card {
+  display: flex;
+  background-color: var(--color-secondary);
+  border-radius: 12px;
+  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(185, 185, 185, 0.897);
+}
+
+.ads-card {
+  grid-template-columns: 1fr;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.ads-card input {
+  padding: 0.5rem;
+}
+
+.card .featured {
+  position: relative;
+  z-index: 0;
+}
+
+.card .featured img {
+  display: block;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.is-rounded {
+  border-radius: 12px;
+}
+.material-icons:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* tablets */
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+  .homepage {
+    grid-template-columns: 10rem 1fr;
+  }
+
+  .advert-main .ads-card {
+    width: 100%;
+  }
+}
+
+.managepage {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-gap: 5px;
+  background-color: var(--main-content-bg);
+}
+
+.managepage .material-icons {
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* phones  */
+@media only screen and (max-width: 414px) {
+  .homepage {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+.advert-main .ads-card {
+    width: 100%;
+  }
+}
