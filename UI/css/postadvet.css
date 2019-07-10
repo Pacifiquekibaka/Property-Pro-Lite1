@@ -44,7 +44,6 @@ li span {
   grid-template-columns: 1;
   grid-gap: 1rem;
 }
-
 .btn-action {
   cursor: pointer;
   border: none;
@@ -143,7 +142,7 @@ li span {
 }
 
 .aside>section {
-  background-color: #fff;
+  background-color: #DDDDDD;
   box-shadow: 0 0 4px 0 rgba(185, 185, 185, 0.897);
   border-radius: 12px;
   height: 80vh;
