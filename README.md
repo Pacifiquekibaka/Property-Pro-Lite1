@@ -1,6 +1,8 @@
 # Property-Pro-Lite1
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
 
+* UI hosting link: https://pacifiquekibaka.github.io/Property-Pro-Lite1/UI/html/
+
 Features:
   
 1.User can sign up.
