@@ -30,7 +30,7 @@ const checkPropertyType = req => property.find(prop => prop.type === req);
 */
 
 const getAllProperties = (req, res) => res.status(200).send({
-  status: 'success',
+  status: 200,
   data: {
     message: 'Properties successfully received',
     property,
@@ -80,7 +80,7 @@ const postProperty = async (req, res) => {
     owner, price, state, city, address, type, image_uri
   );
   return res.status(201).send({
-    status: 'success',
+    status: 201,
     data: {
       newProperty: newProperty[newProperty.length - 1],
     }
@@ -107,7 +107,7 @@ const putProperty = (req, res) => {
       city, address, type, image_url
     );
     return res.status(201).send({
-      status: 'success',
+      status: 201,
       data: {
         message: 'Property updated successfully',
         updatedProperty
@@ -115,7 +115,7 @@ const putProperty = (req, res) => {
     });
   }
   return res.status(400).send({
-    status: 'error',
+    status: 400,
     error: 'Property ad not found',
   });
 };
@@ -134,12 +134,12 @@ const deleteProperty = async (req, res) => {
     // console.log(data.id);
     await deletesProperty(data.id);
     return res.status(200).send({
-      status: 'success',
+      status: 200,
       message: 'Property ad deleted successfully',
     });
   }
   return res.status(400).send({
-    status: 'error',
+    status: 400,
     error: 'Property ad not found',
   });
 };
