@@ -83,6 +83,10 @@ Linter
 ESLint - Linter Tool
 
 Babel ,compiles ES6
+
+For testing api Run :
+
+npm test 
             
 -Developer:
 Pacifique Kibaka
