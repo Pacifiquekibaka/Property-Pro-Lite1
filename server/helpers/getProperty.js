@@ -1,7 +1,7 @@
 const getProps = (data, res, errMsg) => {
   if (data !== undefined) {
     return res.status(200).send({
-      status: 'success',
+      status: 200,
       data: {
         message: 'Property successfully retrieved',
         data
@@ -9,7 +9,7 @@ const getProps = (data, res, errMsg) => {
     });
   }
   return res.status(400).send({
-    status: 'error',
+    status: 400,
     error: errMsg,
   });
 };

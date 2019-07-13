@@ -19,28 +19,28 @@ const {getAllProperties,
 const router = express.Router();
 
 
-/*create account for user*/
+/*route for create account for user*/
 router.post('/auth/signup', userSignUpValidate, userSignUp);
 
-/*login route*/
+/*route for login route*/
 router.post('/auth/signin', userSignInValidate, userSignIn);
 
-/*search all properties*/
+/*route for search all properties*/
 router.get('/properties', getAllProperties);
 
-/*search one property*/
+/*route for search one property*/
 router.get('/property/:id', getProperty);
 
-/* create a new property*/
+/*route for create a new property*/
 router.post('/property', postValidate, postProperty);
 
-/*update a property*/
+/*route for update a property*/
 router.patch('/property/:id', putProperty);
 
-/*delete a property*/
+/*route for delete a property*/
 router.delete('/property/:id', deleteProperty);
 
-/*search all properties by type*/
+/*route for search all properties by type*/
 router.get('/property', getPropertiesByType);
 
 

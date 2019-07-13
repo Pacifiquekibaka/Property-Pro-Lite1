@@ -35,7 +35,7 @@ const userSignUp = async (req, res) => {
     return payloader(res, newUser[newUser.length - 1], 201);
   } catch (err) {
     return res.status(500).send({
-      status: 'error',
+      status: 500,
       error: err,
     });
   }
