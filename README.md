@@ -1,5 +1,8 @@
-# Property-Pro-Lite1
+Property-Pro-Lite
+
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
+
+*HOSTED UI LINK: https://pacifiquekibaka.github.io/Property-Pro-Lite1/UI/html/
 
 Features:
   
@@ -13,7 +16,7 @@ Features:
 8. User can view all properties of a specific type - 2 bedroom, 3 bedroom, mini flat etc.
 9. User can view a specific property advert
 
-Optional Features
+Optional Features:
 
 ● User can reset password.
 ● flag/report a posted AD as fraudulent.
