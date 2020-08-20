@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Pacifiquekibaka/Property-Pro-Lite1#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "cloudinary": "^1.14.0",
     "connect-multiparty": "^2.2.0",
     "dotenv": "^8.0.0",
